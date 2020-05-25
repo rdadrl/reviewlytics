@@ -1,13 +1,22 @@
 # Reviewlytics
-Predicts honesty of Amazon reviews by their overall emotion.
+Predicts accuracy of Amazon reviews by sentiment analysis.
 
 ## Strategy
-
-* Using the ISEAR dataset, analyze each sentence for emotions.
-* Categorize reviews based on distributions of emotions.
-* Observe results & derive options for honesty prediction.
+* Select sample data
+	* Picked software related categories for the sake of context
+	* There exists digital & physical versions of same category; possibility to use one for training and the other for validation.
+* Form vocabulary
+	* Preproccess by stemming words
+	* Select most frequent N-words
+	* Fill Bag of Words (BOW)
+* Model data
+	* Classification: Logistic Regression using CountVectorizer
+	* Clustering: Nonnegative Matrix Factorization with Term Frequency - Inverse Document Frequency.
+* Run statistical analysis' on data
+	* Use model to find and filter outliers
+	* Use model to predict overall score
+* Compare findings
 
 ## Datasets
 
-* [ISEAR](https://www.unige.ch/cisa/research/materials-and-online-research/research-material/) - The International Survey on Emotion Antecedents and Reactions
-* [Amazon Review Data](https://nijianmo.github.io/amazon/index.html) 
+* [Amazon Review Data](https://s3.amazonaws.com/amazon-reviews-pds/readme.html) 
