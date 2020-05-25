@@ -1,3 +1,0 @@
-[submodule "dataLoader/py_isear_dataset"]
-	path = dataLoader/py_isear_dataset
-	url = https://github.com/sinmaniphel/py_isear_dataset

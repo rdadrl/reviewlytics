@@ -1,4 +1,3 @@
 scipy
 numpy
 sklearn
-py_isear_dataset
